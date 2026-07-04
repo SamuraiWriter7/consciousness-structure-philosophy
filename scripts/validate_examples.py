@@ -19,6 +19,11 @@ VALIDATION_TARGETS = [
         "schema": ROOT / "schemas" / "yin-yang-interaction-layer.schema.json",
         "example": ROOT / "examples" / "yin-yang-interaction-layer.example.yaml",
     },
+    {
+        "name": "Trace Memory Integration",
+        "schema": ROOT / "schemas" / "trace-memory-integration.schema.json",
+        "example": ROOT / "examples" / "trace-memory-integration.example.yaml",
+    },
 ]
 
 
