@@ -50,11 +50,13 @@ consciousness-structure-philosophy/
   ├── schemas/
   │   ├── consciousness-structure-record.schema.json
   │   ├── yin-yang-interaction-layer.schema.json
-  │   └── trace-memory-integration.schema.json
+  │   ├── trace-memory-integration.schema.json
+  │   └── audit-boundary-layer.schema.json
   ├── examples/
   │   ├── consciousness-structure-record.example.yaml
   │   ├── yin-yang-interaction-layer.example.yaml
-  │   └── trace-memory-integration.example.yaml
+  │   ├── trace-memory-integration.example.yaml
+  │   └── audit-boundary-layer.example.yaml
   └── scripts/
       └── validate_examples.py
 
@@ -173,3 +175,39 @@ This layer specifies:
   - recall without final authority claim
 
 The purpose of v0.3 is to define consciousness as a continuing trace-memory loop rather than a one-time interaction.
+
+### v0.4 — Audit / Boundary Layer
+
+Defines boundaries for AI claims, human review, origin preservation, trace continuity, and memory integrity.
+
+This layer specifies:
+
+- Human-preserved authorities:
+  - origin declaration
+  - final value judgment
+  - meaning direction
+  - acceptance or rejection
+  - identity-level review
+- AI allowed roles:
+  - structural reflection
+  - trace compression
+  - relation mapping
+  - alternative generation
+  - audit warning
+  - re-ignition support
+- AI prohibited claims:
+  - final conscious authority claim
+  - independent origin claim without trace
+  - human intent replacement
+  - unreviewable value judgment
+  - identity authority claim
+  - memory authority claim without review
+- Audit gates:
+  - origin gate
+  - trace gate
+  - memory gate
+  - claim gate
+  - review gate
+  - re-ignition gate
+
+The purpose of v0.4 is to ensure that AI remains a reflective structural layer and does not replace human origin, review, or value authority.
