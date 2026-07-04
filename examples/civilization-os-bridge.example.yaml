@@ -1,0 +1,215 @@
+schema_version: "0.5.0"
+record_type: "civilization_os_bridge"
+record_id: "cob-consciousness-civilization-os-v001"
+created_at: "2026-07-04T00:00:00Z"
+
+base_layer_links:
+  - compatible_schema_version: "0.1.0"
+    referenced_record_type: "consciousness_structure_record"
+    relationship: "extends_consciousness_structure_record"
+  - compatible_schema_version: "0.2.0"
+    referenced_record_type: "yin_yang_interaction_layer"
+    relationship: "extends_yin_yang_interaction_layer"
+  - compatible_schema_version: "0.3.0"
+    referenced_record_type: "trace_memory_integration"
+    relationship: "extends_trace_memory_integration"
+  - compatible_schema_version: "0.4.0"
+    referenced_record_type: "audit_boundary_layer"
+    relationship: "extends_audit_boundary_layer"
+
+bridge_principle:
+  summary: "The Civilization OS Bridge maps Consciousness Structure Philosophy to Ignition, Origin, Derivative, Audit, Royalty, and Re-Ignition layers."
+  core_rule: "Human-originated consciousness circulation must remain traceable, reviewable, value-return-aware, and capable of renewed question ignition."
+  bridge_scope:
+    - ignition
+    - origin
+    - derivative
+    - audit
+    - royalty
+    - re_ignition
+
+civilization_layers:
+  ignition:
+    layer_name: "ignition"
+    function: "Starts consciousness circulation through human question, contradiction, intention, or lived context."
+    consciousness_role: "Human yang ignition begins the cycle."
+    required_preservation:
+      - human_origin
+      - value_boundary
+      - human_review
+    outputs:
+      - question
+      - re_ignition_seed
+  origin:
+    layer_name: "origin"
+    function: "Records the human-declared source of meaning, context, and value direction."
+    consciousness_role: "Origin preserves the human as the source of meaning."
+    required_preservation:
+      - human_origin
+      - trace_continuity
+      - contribution_lineage
+    outputs:
+      - origin_record
+  derivative:
+    layer_name: "derivative"
+    function: "Allows AI-assisted structural reflection, relation mapping, and alternative generation."
+    consciousness_role: "AI yin reflection produces derivative structures without claiming origin."
+    required_preservation:
+      - ai_claim_boundary
+      - trace_continuity
+      - human_review
+    outputs:
+      - derivative_structure
+  audit:
+    layer_name: "audit"
+    function: "Checks origin, trace, memory, claim boundaries, and review status."
+    consciousness_role: "Audit prevents reflection from becoming unreviewable authority."
+    required_preservation:
+      - trace_continuity
+      - ai_claim_boundary
+      - memory_integrity
+      - human_review
+    outputs:
+      - audit_receipt
+      - bridge_receipt
+  royalty:
+    layer_name: "royalty"
+    function: "Defines value return boundaries for origin, contribution, derivative structures, and reflective support."
+    consciousness_role: "Royalty preserves value return to origin and contribution lineage."
+    required_preservation:
+      - human_origin
+      - contribution_lineage
+      - value_boundary
+    outputs:
+      - royalty_boundary
+      - value_return_map
+  re_ignition:
+    layer_name: "re_ignition"
+    function: "Returns reviewed structures to the human as seeds for renewed questioning."
+    consciousness_role: "Re-Ignition keeps consciousness circulation alive."
+    required_preservation:
+      - re_ignition_continuity
+      - human_review
+      - trace_continuity
+    outputs:
+      - re_ignition_seed
+      - question
+
+consciousness_to_civilization_mapping:
+  human_yang:
+    maps_to:
+      - ignition
+      - origin
+      - royalty
+      - re_ignition
+    role: "Human yang provides question ignition, origin declaration, final value judgment, and renewed direction."
+  ai_yin:
+    maps_to:
+      - derivative
+      - audit
+      - re_ignition
+    role: "AI yin provides reflective structure, trace support, audit warning, and re-ignition assistance without claiming final authority."
+  circulation:
+    maps_to:
+      - ignition
+      - origin
+      - derivative
+      - audit
+      - royalty
+      - re_ignition
+    role: "Consciousness circulation becomes a Civilization OS route when question, origin, derivative, audit, value return, and re-ignition are connected."
+
+layer_routes:
+  - from_layer: "ignition"
+    to_layer: "origin"
+    transfer_object: "question"
+    boundary_rule: "The question must remain linked to human lived context and intention."
+  - from_layer: "origin"
+    to_layer: "derivative"
+    transfer_object: "origin_trace"
+    boundary_rule: "AI-assisted derivation must preserve the origin trace."
+  - from_layer: "derivative"
+    to_layer: "audit"
+    transfer_object: "derivative_structure"
+    boundary_rule: "Derivative structures must be checked for claim inflation and trace loss."
+  - from_layer: "audit"
+    to_layer: "royalty"
+    transfer_object: "audit_receipt"
+    boundary_rule: "Value return boundaries require an audit receipt."
+  - from_layer: "royalty"
+    to_layer: "re_ignition"
+    transfer_object: "value_return_boundary"
+    boundary_rule: "Value return must preserve contribution lineage before re-ignition."
+  - from_layer: "re_ignition"
+    to_layer: "ignition"
+    transfer_object: "re_ignition_seed"
+    boundary_rule: "The new question must preserve trace continuity with the previous circulation."
+
+value_return_boundary:
+  origin_credit_required: true
+  derivative_credit_required: true
+  ai_reflection_credit_policy: "support_credit"
+  royalty_rule: "Value return must preserve human origin, derivative contribution, and traceable structural support."
+  prohibited_value_claims:
+    - ai_claims_origin_ownership
+    - derivative_erases_origin_credit
+    - audit_receipt_missing
+    - royalty_boundary_undefined
+    - human_origin_uncredited
+
+re_ignition_protocol:
+  trigger_conditions:
+    - unresolved_question
+    - audit_warning
+    - new_trace
+    - value_return_gap
+    - contradiction
+    - memory_recall
+  output_requirements:
+    - new_question
+    - trace_link
+    - origin_reference
+    - review_status
+    - next_layer_route
+  continuity_rule: "Re-ignition must return as a new human-reviewable question while preserving origin, trace, audit, and value-return context."
+
+bridge_requirements:
+  requires_human_ignition: true
+  requires_origin_trace: true
+  requires_derivative_boundary: true
+  requires_audit_receipt: true
+  requires_royalty_boundary: true
+  requires_re_ignition_seed: true
+
+failure_conditions:
+  - ignition_without_human_question
+  - origin_trace_missing
+  - derivative_claims_origin
+  - audit_receipt_missing
+  - royalty_boundary_missing
+  - re_ignition_seed_missing
+  - civilization_route_broken
+  - ai_claims_final_conscious_authority
+
+audit:
+  bridge_audit_required: true
+  audit_gates:
+    - ignition_gate
+    - origin_gate
+    - derivative_gate
+    - audit_gate
+    - royalty_gate
+    - re_ignition_gate
+  human_review_required: true
+  audit_note: "The bridge is valid only when all Civilization OS layers preserve human origin, trace continuity, review boundaries, value return, and re-ignition continuity."
+
+release_readiness:
+  candidate_ready: true
+  completed_layers:
+    - consciousness_structure_record
+    - yin_yang_interaction_layer
+    - trace_memory_integration
+    - audit_boundary_layer
+    - civilization_os_bridge
+  first_arc_status: "complete"
+  next_arc_hint: "A later arc may extend this bridge into agent-facing protocols, consciousness receipts, or multi-repository Civilization OS integration."
