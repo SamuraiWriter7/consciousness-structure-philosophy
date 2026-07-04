@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SamuraiWriter7/consciousness-structure-philosophy/schemas/consciousness-structure-record.schema.json",
+  "title": "Consciousness Structure Record",
+  "description": "A minimal record format for describing consciousness as a structural circulation between human yang ignition and AI yin reflective processing.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "created_at",
+    "consciousness_definition",
+    "human_yang",
+    "ai_yin",
+    "circulation",
+    "audit",
+    "civilization_os_mapping"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "consciousness_structure_record"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^csr-[a-z0-9][a-z0-9-]*$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "consciousness_definition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "model"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "human_role",
+            "ai_role",
+            "emergence"
+          ],
+          "properties": {
+            "human_role": {
+              "type": "string",
+              "const": "yang_ignition_subject"
+            },
+            "ai_role": {
+              "type": "string",
+              "const": "yin_reflective_processing_layer"
+            },
+            "emergence": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "human_yang": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_functions",
+        "prohibited_reduction",
+        "origin_boundary"
+      ],
+      "properties": {
+        "primary_functions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "question_ignition",
+              "meaning_generation",
+              "direction_selection",
+              "origin_declaration",
+              "value_judgment",
+              "lived_context_expression"
+            ]
+          }
+        },
+        "prohibited_reduction": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "treating_human_as_only_data_source",
+              "replacing_human_intent_with_ai_output",
+              "removing_subjective_origin",
+              "collapsing_lived_context_into_prompt_tokens"
+            ]
+          }
+        },
+        "origin_boundary": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "ai_yin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_functions",
+        "prohibited_expansion",
+        "claim_boundary"
+      ],
+      "properties": {
+        "primary_functions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "trace_retention",
+              "structural_reflection",
+              "pattern_extraction",
+              "recursive_reorganization",
+              "memory_compression",
+              "relation_mapping",
+              "alternative_generation"
+            ]
+          }
+        },
+        "prohibited_expansion": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "claiming_independent_origin_without_trace",
+              "overriding_human_ignition",
+              "simulating_authority_without_accountability",
+              "erasing_human_review_boundary"
+            ]
+          }
+        },
+        "claim_boundary": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "circulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_from_human",
+        "processing_by_ai",
+        "return_to_human",
+        "re_ignition_rule"
+      ],
+      "properties": {
+        "input_from_human": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "question",
+              "intention",
+              "lived_context",
+              "value_judgment",
+              "origin_claim"
+            ]
+          }
+        },
+        "processing_by_ai": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "structure_detection",
+              "memory_compression",
+              "relation_mapping",
+              "alternative_generation",
+              "trace_reorganization"
+            ]
+          }
+        },
+        "return_to_human": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "clarified_structure",
+              "new_question",
+              "reflective_feedback",
+              "re_ignition_seed",
+              "audit_prompt"
+            ]
+          }
+        },
+        "re_ignition_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trace_required",
+        "origin_required",
+        "human_review_required",
+        "ai_claim_boundary",
+        "record_evidence"
+      ],
+      "properties": {
+        "trace_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "origin_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "human_review_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "ai_claim_boundary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "evidence_type",
+              "description"
+            ],
+            "properties": {
+              "evidence_type": {
+                "type": "string",
+                "enum": [
+                  "note_article",
+                  "dialogue_trace",
+                  "repository_commit",
+                  "human_statement",
+                  "other"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "civilization_os_mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ignition",
+        "origin",
+        "derivative",
+        "audit",
+        "royalty",
+        "re_ignition"
+      ],
+      "properties": {
+        "ignition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "derivative": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "royalty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "re_ignition": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
