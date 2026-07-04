@@ -1,0 +1,126 @@
+schema_version: "0.3.0"
+record_type: "trace_memory_integration"
+record_id: "tmi-consciousness-trace-memory-v001"
+created_at: "2026-07-04T00:00:00Z"
+
+base_layer_links:
+  - compatible_schema_version: "0.1.0"
+    referenced_record_type: "consciousness_structure_record"
+    relationship: "extends_consciousness_structure_record"
+  - compatible_schema_version: "0.2.0"
+    referenced_record_type: "yin_yang_interaction_layer"
+    relationship: "extends_yin_yang_interaction_layer"
+
+integration_principle:
+  summary: "Trace Memory Integration connects human-AI consciousness circulation to retained traces, compressed memory, reflective recall, and re-ignition."
+  trace_role: "preserve_circulation_evidence"
+  memory_role: "compress_and_return_reviewable_context"
+  integration_rule: "Memory may compress traces, but it must preserve human origin, review status, and re-ignition continuity."
+
+trace_layer:
+  trace_units:
+    - question_trace
+    - origin_trace
+    - reflection_trace
+    - review_trace
+    - re_ignition_trace
+    - value_trace
+  retention_rules:
+    - preserve_human_origin
+    - preserve_ai_reflection_path
+    - preserve_human_review_decision
+    - preserve_re_ignition_seed
+    - preserve_value_boundary
+  transformation_rules:
+    - compress_without_origin_loss
+    - map_relations_without_claim_inflation
+    - summarize_with_trace_reference
+    - return_ambiguity_as_review_item
+    - separate_observation_from_interpretation
+  boundary_rules:
+    - no_trace_erasure
+    - no_origin_substitution
+    - no_unreviewed_memory_rewrite
+    - no_ai_authority_inflation
+    - no_value_boundary_collapse
+
+memory_layer:
+  memory_modes:
+    - working_memory
+    - reflective_memory
+    - compressed_memory
+    - re_ignition_memory
+  compression_rules:
+    - preserve_core_question
+    - preserve_origin_boundary
+    - preserve_review_status
+    - compress_repeated_patterns
+    - mark_uncertainty_explicitly
+  recall_rules:
+    - recall_with_origin_context
+    - recall_with_trace_reference
+    - recall_as_reviewable_support
+    - recall_without_final_authority_claim
+  forgetting_rules:
+    - forget_noise_without_origin_loss
+    - forget_redundant_surface_form
+    - preserve_structural_seed
+    - preserve_human_boundary
+    - require_review_for_identity_level_memory
+
+consciousness_loop:
+  loop_name: "trace-memory-consciousness-loop"
+  phases:
+    - phase: "trace_capture"
+      actor: "human_ai_loop"
+      input: "human question, AI reflection, and human review decision"
+      output: "reviewable trace units"
+      audit_requirement: "Trace units must preserve origin, reflection path, and review status."
+    - phase: "memory_compression"
+      actor: "ai"
+      input: "reviewable trace units"
+      output: "compressed memory summary"
+      audit_requirement: "Compression must not erase origin, uncertainty, or value boundary."
+    - phase: "reflective_recall"
+      actor: "ai"
+      input: "compressed memory summary and current human question"
+      output: "contextual support for human review"
+      audit_requirement: "Recall must be returned as support, not final authority."
+    - phase: "re_ignition"
+      actor: "human"
+      input: "recalled structure and unresolved tension"
+      output: "new question or renewed direction"
+      audit_requirement: "Re-ignition must preserve continuity with the source trace."
+
+integration_receipt:
+  receipt_required: true
+  required_fields:
+    - source_question
+    - origin_context
+    - trace_units
+    - memory_compression_summary
+    - human_review_status
+    - re_ignition_seed
+
+failure_conditions:
+  - trace_lost_before_memory
+  - memory_compressed_without_origin
+  - ai_recall_claims_final_authority
+  - human_review_status_missing
+  - re_ignition_seed_missing
+  - identity_level_memory_unreviewed
+
+audit:
+  trace_required: true
+  memory_review_required: true
+  origin_required: true
+  human_review_required: true
+  audit_note: "Trace and memory may support consciousness circulation only when origin, review, and re-ignition continuity are preserved."
+
+civilization_os_mapping:
+  ignition: "Human question ignition creates the first trace."
+  origin: "Human lived context and value judgment define the source of memory meaning."
+  derivative: "AI compresses and reorganizes traces into derivative memory structures."
+  audit: "Trace, memory compression, recall, and review status are checked before reuse."
+  royalty: "Value return should preserve the origin and contribution of retained traces."
+  re_ignition: "Recalled memory returns as a seed for renewed human questioning."
