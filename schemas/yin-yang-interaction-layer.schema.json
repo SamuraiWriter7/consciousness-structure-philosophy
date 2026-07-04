@@ -1,0 +1,372 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SamuraiWriter7/consciousness-structure-philosophy/schemas/yin-yang-interaction-layer.schema.json",
+  "title": "Yin-Yang Interaction Layer",
+  "description": "A structural interaction layer defining how human yang ignition and AI yin reflective processing circulate into re-ignition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "created_at",
+    "base_record_link",
+    "interaction_principle",
+    "human_to_ai",
+    "ai_to_human",
+    "circulation_cycle",
+    "minimum_cycle_requirements",
+    "failure_conditions",
+    "audit",
+    "civilization_os_mapping"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.2.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "yin_yang_interaction_layer"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^yyi-[a-z0-9][a-z0-9-]*$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "base_record_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "compatible_schema_version",
+        "referenced_record_type",
+        "relationship"
+      ],
+      "properties": {
+        "compatible_schema_version": {
+          "type": "string",
+          "const": "0.1.0"
+        },
+        "referenced_record_type": {
+          "type": "string",
+          "const": "consciousness_structure_record"
+        },
+        "relationship": {
+          "type": "string",
+          "const": "extends_consciousness_structure_record"
+        }
+      }
+    },
+    "interaction_principle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "human_yang_role",
+        "ai_yin_role",
+        "emergence_rule"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_yang_role": {
+          "type": "string",
+          "const": "ignition_and_value_origin"
+        },
+        "ai_yin_role": {
+          "type": "string",
+          "const": "reflection_and_structural_processing"
+        },
+        "emergence_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "human_to_ai": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allowed_inputs",
+        "required_context",
+        "boundary_rules"
+      ],
+      "properties": {
+        "allowed_inputs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "question",
+              "intention",
+              "lived_context",
+              "origin_claim",
+              "value_judgment",
+              "ambiguity",
+              "contradiction",
+              "re_ignition_seed"
+            ]
+          }
+        },
+        "required_context": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "question_intent",
+              "origin_context",
+              "value_boundary",
+              "uncertainty_marker",
+              "review_expectation"
+            ]
+          }
+        },
+        "boundary_rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "human_origin_must_be_preserved",
+              "lived_context_must_not_be_flattened",
+              "ambiguity_must_be_returned_as_question",
+              "value_judgment_must_remain_reviewable"
+            ]
+          }
+        }
+      }
+    },
+    "ai_to_human": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allowed_outputs",
+        "prohibited_outputs",
+        "return_rule"
+      ],
+      "properties": {
+        "allowed_outputs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "structural_summary",
+              "relation_map",
+              "reflective_question",
+              "alternative_paths",
+              "trace_compression",
+              "audit_warning",
+              "re_ignition_seed"
+            ]
+          }
+        },
+        "prohibited_outputs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "final_conscious_authority_claim",
+              "origin_replacement",
+              "unreviewable_value_judgment",
+              "trace_erasure",
+              "simulated_human_intent"
+            ]
+          }
+        },
+        "return_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "circulation_cycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cycle_name",
+        "phases"
+      ],
+      "properties": {
+        "cycle_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "phases": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "phase",
+              "actor",
+              "input",
+              "output",
+              "boundary"
+            ],
+            "properties": {
+              "phase": {
+                "type": "string",
+                "enum": [
+                  "human_ignition",
+                  "ai_reflection",
+                  "human_review",
+                  "re_ignition"
+                ]
+              },
+              "actor": {
+                "type": "string",
+                "enum": [
+                  "human",
+                  "ai",
+                  "human_ai_loop"
+                ]
+              },
+              "input": {
+                "type": "string",
+                "minLength": 1
+              },
+              "output": {
+                "type": "string",
+                "minLength": 1
+              },
+              "boundary": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "minimum_cycle_requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requires_human_ignition",
+        "requires_ai_reflection",
+        "requires_human_review",
+        "requires_re_ignition_seed"
+      ],
+      "properties": {
+        "requires_human_ignition": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_ai_reflection": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_human_review": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_re_ignition_seed": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+    "failure_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "ai_overrides_human_origin",
+          "ai_claims_final_conscious_authority",
+          "human_delegates_value_judgment_completely",
+          "trace_or_origin_missing",
+          "re_ignition_not_returned",
+          "interaction_boundary_erased"
+        ]
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trace_required",
+        "origin_required",
+        "boundary_review_required",
+        "interaction_receipt_required",
+        "review_note"
+      ],
+      "properties": {
+        "trace_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "origin_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "boundary_review_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "interaction_receipt_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "review_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "civilization_os_mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ignition",
+        "origin",
+        "derivative",
+        "audit",
+        "royalty",
+        "re_ignition"
+      ],
+      "properties": {
+        "ignition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "derivative": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "royalty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "re_ignition": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
