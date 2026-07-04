@@ -29,6 +29,11 @@ VALIDATION_TARGETS = [
         "schema": ROOT / "schemas" / "audit-boundary-layer.schema.json",
         "example": ROOT / "examples" / "audit-boundary-layer.example.yaml",
     },
+    {
+        "name": "Civilization OS Bridge",
+        "schema": ROOT / "schemas" / "civilization-os-bridge.schema.json",
+        "example": ROOT / "examples" / "civilization-os-bridge.example.yaml",
+    },
 ]
 
 
