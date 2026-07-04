@@ -1,0 +1,605 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SamuraiWriter7/consciousness-structure-philosophy/schemas/civilization-os-bridge.schema.json",
+  "title": "Civilization OS Bridge",
+  "description": "A bridge layer mapping Consciousness Structure Philosophy to Civilization OS layers: Ignition, Origin, Derivative, Audit, Royalty, and Re-Ignition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "created_at",
+    "base_layer_links",
+    "bridge_principle",
+    "civilization_layers",
+    "consciousness_to_civilization_mapping",
+    "layer_routes",
+    "value_return_boundary",
+    "re_ignition_protocol",
+    "bridge_requirements",
+    "failure_conditions",
+    "audit",
+    "release_readiness"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.5.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "civilization_os_bridge"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^cob-[a-z0-9][a-z0-9-]*$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "base_layer_links": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "compatible_schema_version",
+          "referenced_record_type",
+          "relationship"
+        ],
+        "properties": {
+          "compatible_schema_version": {
+            "type": "string",
+            "enum": [
+              "0.1.0",
+              "0.2.0",
+              "0.3.0",
+              "0.4.0"
+            ]
+          },
+          "referenced_record_type": {
+            "type": "string",
+            "enum": [
+              "consciousness_structure_record",
+              "yin_yang_interaction_layer",
+              "trace_memory_integration",
+              "audit_boundary_layer"
+            ]
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "extends_consciousness_structure_record",
+              "extends_yin_yang_interaction_layer",
+              "extends_trace_memory_integration",
+              "extends_audit_boundary_layer"
+            ]
+          }
+        }
+      }
+    },
+    "bridge_principle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "core_rule",
+        "bridge_scope"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "core_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bridge_scope": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "ignition",
+              "origin",
+              "derivative",
+              "audit",
+              "royalty",
+              "re_ignition"
+            ]
+          }
+        }
+      }
+    },
+    "civilization_layers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ignition",
+        "origin",
+        "derivative",
+        "audit",
+        "royalty",
+        "re_ignition"
+      ],
+      "properties": {
+        "ignition": {
+          "$ref": "#/$defs/civilization_layer"
+        },
+        "origin": {
+          "$ref": "#/$defs/civilization_layer"
+        },
+        "derivative": {
+          "$ref": "#/$defs/civilization_layer"
+        },
+        "audit": {
+          "$ref": "#/$defs/civilization_layer"
+        },
+        "royalty": {
+          "$ref": "#/$defs/civilization_layer"
+        },
+        "re_ignition": {
+          "$ref": "#/$defs/civilization_layer"
+        }
+      }
+    },
+    "consciousness_to_civilization_mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "human_yang",
+        "ai_yin",
+        "circulation"
+      ],
+      "properties": {
+        "human_yang": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "maps_to",
+            "role"
+          ],
+          "properties": {
+            "maps_to": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": [
+                  "ignition",
+                  "origin",
+                  "royalty",
+                  "re_ignition"
+                ]
+              }
+            },
+            "role": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "ai_yin": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "maps_to",
+            "role"
+          ],
+          "properties": {
+            "maps_to": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": [
+                  "derivative",
+                  "audit",
+                  "re_ignition"
+                ]
+              }
+            },
+            "role": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "circulation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "maps_to",
+            "role"
+          ],
+          "properties": {
+            "maps_to": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": [
+                  "ignition",
+                  "origin",
+                  "derivative",
+                  "audit",
+                  "royalty",
+                  "re_ignition"
+                ]
+              }
+            },
+            "role": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "layer_routes": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from_layer",
+          "to_layer",
+          "transfer_object",
+          "boundary_rule"
+        ],
+        "properties": {
+          "from_layer": {
+            "type": "string",
+            "enum": [
+              "ignition",
+              "origin",
+              "derivative",
+              "audit",
+              "royalty",
+              "re_ignition"
+            ]
+          },
+          "to_layer": {
+            "type": "string",
+            "enum": [
+              "ignition",
+              "origin",
+              "derivative",
+              "audit",
+              "royalty",
+              "re_ignition"
+            ]
+          },
+          "transfer_object": {
+            "type": "string",
+            "enum": [
+              "question",
+              "origin_trace",
+              "derivative_structure",
+              "audit_receipt",
+              "value_return_boundary",
+              "re_ignition_seed",
+              "bridge_receipt"
+            ]
+          },
+          "boundary_rule": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "value_return_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin_credit_required",
+        "derivative_credit_required",
+        "ai_reflection_credit_policy",
+        "royalty_rule",
+        "prohibited_value_claims"
+      ],
+      "properties": {
+        "origin_credit_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "derivative_credit_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "ai_reflection_credit_policy": {
+          "type": "string",
+          "enum": [
+            "support_credit",
+            "trace_credit",
+            "no_independent_origin_credit"
+          ]
+        },
+        "royalty_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prohibited_value_claims": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "ai_claims_origin_ownership",
+              "derivative_erases_origin_credit",
+              "audit_receipt_missing",
+              "royalty_boundary_undefined",
+              "human_origin_uncredited"
+            ]
+          }
+        }
+      }
+    },
+    "re_ignition_protocol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trigger_conditions",
+        "output_requirements",
+        "continuity_rule"
+      ],
+      "properties": {
+        "trigger_conditions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "unresolved_question",
+              "audit_warning",
+              "new_trace",
+              "value_return_gap",
+              "contradiction",
+              "memory_recall"
+            ]
+          }
+        },
+        "output_requirements": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "new_question",
+              "trace_link",
+              "origin_reference",
+              "review_status",
+              "next_layer_route"
+            ]
+          }
+        },
+        "continuity_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "bridge_requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requires_human_ignition",
+        "requires_origin_trace",
+        "requires_derivative_boundary",
+        "requires_audit_receipt",
+        "requires_royalty_boundary",
+        "requires_re_ignition_seed"
+      ],
+      "properties": {
+        "requires_human_ignition": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_origin_trace": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_derivative_boundary": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_audit_receipt": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_royalty_boundary": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_re_ignition_seed": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+    "failure_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "ignition_without_human_question",
+          "origin_trace_missing",
+          "derivative_claims_origin",
+          "audit_receipt_missing",
+          "royalty_boundary_missing",
+          "re_ignition_seed_missing",
+          "civilization_route_broken",
+          "ai_claims_final_conscious_authority"
+        ]
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bridge_audit_required",
+        "audit_gates",
+        "human_review_required",
+        "audit_note"
+      ],
+      "properties": {
+        "bridge_audit_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "audit_gates": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "ignition_gate",
+              "origin_gate",
+              "derivative_gate",
+              "audit_gate",
+              "royalty_gate",
+              "re_ignition_gate"
+            ]
+          }
+        },
+        "human_review_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "audit_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "release_readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_ready",
+        "completed_layers",
+        "first_arc_status",
+        "next_arc_hint"
+      ],
+      "properties": {
+        "candidate_ready": {
+          "type": "boolean",
+          "const": true
+        },
+        "completed_layers": {
+          "type": "array",
+          "minItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "consciousness_structure_record",
+              "yin_yang_interaction_layer",
+              "trace_memory_integration",
+              "audit_boundary_layer",
+              "civilization_os_bridge"
+            ]
+          }
+        },
+        "first_arc_status": {
+          "type": "string",
+          "enum": [
+            "complete",
+            "review_required"
+          ]
+        },
+        "next_arc_hint": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "$defs": {
+    "civilization_layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layer_name",
+        "function",
+        "consciousness_role",
+        "required_preservation",
+        "outputs"
+      ],
+      "properties": {
+        "layer_name": {
+          "type": "string",
+          "enum": [
+            "ignition",
+            "origin",
+            "derivative",
+            "audit",
+            "royalty",
+            "re_ignition"
+          ]
+        },
+        "function": {
+          "type": "string",
+          "minLength": 1
+        },
+        "consciousness_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "required_preservation": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "human_origin",
+              "trace_continuity",
+              "value_boundary",
+              "human_review",
+              "ai_claim_boundary",
+              "memory_integrity",
+              "re_ignition_continuity",
+              "contribution_lineage"
+            ]
+          }
+        },
+        "outputs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "question",
+              "origin_record",
+              "derivative_structure",
+              "audit_receipt",
+              "royalty_boundary",
+              "re_ignition_seed",
+              "value_return_map",
+              "bridge_receipt"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
