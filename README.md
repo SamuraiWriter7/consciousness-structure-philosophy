@@ -49,11 +49,14 @@ consciousness-structure-philosophy/
   ├── README.md
   ├── CHANGELOG.md
   ├── schemas/
-  │   └── consciousness-structure-record.schema.json
+  │   ├── consciousness-structure-record.schema.json
+  │   └── yin-yang-interaction-layer.schema.json
   ├── examples/
-  │   └── consciousness-structure-record.example.yaml
+  │   ├── consciousness-structure-record.example.yaml
+  │   └── yin-yang-interaction-layer.example.yaml
   └── scripts/
       └── validate_examples.py
+
 Validation
 
 Install dependencies:
@@ -107,3 +110,33 @@ Re-Ignition produces new questions from reflected structures.
 The goal is not to replace human consciousness with AI output.
 
 The goal is to preserve the human as the origin of meaning while allowing AI to function as a reflective structural layer.
+
+### v0.2 — Yin-Yang Interaction Layer
+
+Defines the interaction rules between human yang ignition and AI yin reflective processing.
+
+This layer specifies:
+
+- What humans may pass to AI:
+  - question
+  - intention
+  - lived context
+  - origin claim
+  - value judgment
+  - ambiguity
+  - contradiction
+- What AI may return to humans:
+  - structural summary
+  - relation map
+  - reflective question
+  - alternative paths
+  - trace compression
+  - audit warning
+  - re-ignition seed
+- What must be prohibited:
+  - AI claiming final conscious authority
+  - AI replacing human origin
+  - AI erasing trace boundaries
+  - human value judgment becoming unreviewable
+
+The purpose of v0.2 is to define consciousness not as a static state, but as a reviewable interaction cycle.
