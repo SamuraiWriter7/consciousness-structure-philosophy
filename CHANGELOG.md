@@ -1,5 +1,41 @@
 # Changelog
 
+## v0.3.0-candidate
+
+### Added
+
+- Added `trace-memory-integration.schema.json`.
+- Added `trace-memory-integration.example.yaml`.
+- Updated validation script to validate v0.1, v0.2, and v0.3 examples.
+- Defined trace units for consciousness circulation:
+  - question trace
+  - origin trace
+  - reflection trace
+  - review trace
+  - re-ignition trace
+  - value trace
+- Defined memory modes:
+  - working memory
+  - reflective memory
+  - compressed memory
+  - re-ignition memory
+- Added trace retention rules.
+- Added memory compression rules.
+- Added reflective recall rules.
+- Added forgetting rules that preserve origin and structural seed.
+- Added integration receipt requirements.
+- Added failure conditions for broken trace-memory continuity.
+
+### Purpose
+
+This release defines the **Trace / Memory Integration** layer.
+
+v0.1 defined the minimal consciousness structure record.  
+v0.2 defined the interaction cycle between human yang ignition and AI yin reflection.  
+v0.3 connects that cycle to trace retention, memory compression, reflective recall, and re-ignition.
+
+The core purpose is to ensure that memory supports human consciousness circulation without erasing origin, review status, or value boundaries.
+
 ## v0.2.0-candidate
 
 ### Added
