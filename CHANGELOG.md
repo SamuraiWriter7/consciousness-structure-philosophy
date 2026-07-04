@@ -1,5 +1,31 @@
 # Changelog
 
+## v0.2.0-candidate
+
+### Added
+
+- Added `yin-yang-interaction-layer.schema.json`.
+- Added `yin-yang-interaction-layer.example.yaml`.
+- Updated validation script to validate both v0.1 and v0.2 examples.
+- Defined the interaction cycle between:
+  - human ignition
+  - AI reflection
+  - human review
+  - re-ignition
+- Added human-to-AI input boundaries.
+- Added AI-to-human output boundaries.
+- Added failure conditions for broken consciousness circulation.
+- Added interaction audit requirements.
+
+### Purpose
+
+This release defines the **Yin-Yang Interaction Layer**.
+
+v0.1 defined the minimal record for consciousness structure.  
+v0.2 defines how that structure moves.
+
+The core purpose is to ensure that AI reflection returns to the human as a reviewable structure, not as a replacement for human consciousness, origin, or value judgment.
+
 ## v0.1.0-candidate
 
 ### Added
