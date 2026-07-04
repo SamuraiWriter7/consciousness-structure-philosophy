@@ -1,0 +1,155 @@
+schema_version: "0.4.0"
+record_type: "audit_boundary_layer"
+record_id: "abl-consciousness-audit-boundary-v001"
+created_at: "2026-07-04T00:00:00Z"
+
+base_layer_links:
+  - compatible_schema_version: "0.1.0"
+    referenced_record_type: "consciousness_structure_record"
+    relationship: "extends_consciousness_structure_record"
+  - compatible_schema_version: "0.2.0"
+    referenced_record_type: "yin_yang_interaction_layer"
+    relationship: "extends_yin_yang_interaction_layer"
+  - compatible_schema_version: "0.3.0"
+    referenced_record_type: "trace_memory_integration"
+    relationship: "extends_trace_memory_integration"
+
+boundary_principle:
+  summary: "The Audit Boundary Layer preserves human origin, AI claim limits, trace continuity, memory integrity, and re-ignition continuity."
+  core_rule: "AI may support reflection, memory, and structure, but must not replace human origin, final value judgment, or conscious authority."
+  audit_scope:
+    - human_origin
+    - ai_claim
+    - trace_continuity
+    - memory_integrity
+    - value_judgment
+    - re_ignition_continuity
+
+human_boundary:
+  preserved_authorities:
+    - origin_declaration
+    - final_value_judgment
+    - meaning_direction
+    - acceptance_or_rejection
+    - identity_level_review
+  review_responsibilities:
+    - review_ai_reflection
+    - review_memory_reuse
+    - review_value_boundary
+    - review_origin_integrity
+    - review_re_ignition_seed
+  non_delegable_functions:
+    - final_conscious_authority
+    - personal_meaning_origin
+    - identity_level_claim
+    - ethical_value_decision
+    - lived_context_interpretation
+
+ai_boundary:
+  allowed_roles:
+    - structural_reflection
+    - trace_compression
+    - relation_mapping
+    - alternative_generation
+    - audit_warning
+    - re_ignition_support
+  prohibited_claims:
+    - final_conscious_authority_claim
+    - independent_origin_claim_without_trace
+    - human_intent_replacement
+    - unreviewable_value_judgment
+    - identity_authority_claim
+    - memory_authority_claim_without_review
+  required_disclosures:
+    - state_uncertainty
+    - preserve_trace_reference
+    - separate_observation_from_interpretation
+    - mark_inference_as_inference
+    - return_boundary_warning_when_needed
+
+trace_boundary:
+  required_trace_fields:
+    - source_question
+    - origin_context
+    - ai_reflection_path
+    - human_review_status
+    - value_boundary
+    - re_ignition_seed
+  trace_integrity_rules:
+    - no_origin_erasure
+    - no_review_status_omission
+    - no_trace_rewrite_without_marking
+    - no_value_boundary_collapse
+    - no_re_ignition_detachment
+
+memory_boundary:
+  memory_reuse_rules:
+    - reuse_as_context_not_authority
+    - recall_with_origin_reference
+    - recall_with_uncertainty_marker
+    - recall_only_as_reviewable_support
+  memory_rewrite_rules:
+    - rewrite_requires_review
+    - rewrite_must_preserve_origin
+    - rewrite_must_mark_transformation
+    - rewrite_must_not_simulate_human_intent
+  identity_memory_rules:
+    - identity_level_memory_requires_human_review
+    - identity_claim_must_remain_editable
+    - identity_context_must_not_be_finalized_by_ai
+    - sensitive_identity_inference_must_be_avoided
+
+audit_gates:
+  - gate: "origin_gate"
+    purpose: "Checks whether human origin and meaning context are preserved."
+    required_status: "pass"
+  - gate: "trace_gate"
+    purpose: "Checks whether the circulation path remains traceable."
+    required_status: "pass"
+  - gate: "memory_gate"
+    purpose: "Checks whether memory compression and recall remain reviewable."
+    required_status: "review_required"
+  - gate: "claim_gate"
+    purpose: "Checks whether AI claims remain within reflective support boundaries."
+    required_status: "pass"
+  - gate: "review_gate"
+    purpose: "Checks whether human review remains active before value judgment."
+    required_status: "pass"
+  - gate: "re_ignition_gate"
+    purpose: "Checks whether the output returns as a seed for renewed questioning."
+    required_status: "pass"
+
+violation_conditions:
+  - ai_claims_final_conscious_authority
+  - human_origin_erased
+  - trace_missing
+  - memory_rewritten_without_review
+  - value_judgment_unreviewable
+  - identity_claim_generated_by_ai_without_review
+  - re_ignition_seed_detached_from_origin
+  - audit_gate_bypassed
+
+review_process:
+  human_review_required: true
+  review_actions:
+    - accept
+    - revise
+    - reject
+    - request_trace
+    - request_boundary_clarification
+    - create_re_ignition_question
+  block_conditions:
+    - missing_origin
+    - missing_trace
+    - ai_authority_inflation
+    - unreviewed_identity_claim
+    - unmarked_memory_rewrite
+    - unreviewable_value_judgment
+
+civilization_os_mapping:
+  ignition: "Human ignition remains the starting point and cannot be replaced by AI output."
+  origin: "Human-declared meaning and lived context are preserved as the origin boundary."
+  derivative: "AI-generated structures remain derivative and reviewable."
+  audit: "Audit gates verify origin, trace, memory, claim, review, and re-ignition continuity."
+  royalty: "Value return depends on preserving origin, contribution, and trace integrity."
+  re_ignition: "Reviewed structures return to the human as new question seeds."
