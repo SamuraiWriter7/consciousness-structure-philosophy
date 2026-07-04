@@ -1,0 +1,426 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SamuraiWriter7/consciousness-structure-philosophy/schemas/trace-memory-integration.schema.json",
+  "title": "Trace Memory Integration",
+  "description": "A structural layer connecting consciousness circulation to trace retention, memory compression, reflective recall, and re-ignition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "created_at",
+    "base_layer_links",
+    "integration_principle",
+    "trace_layer",
+    "memory_layer",
+    "consciousness_loop",
+    "integration_receipt",
+    "failure_conditions",
+    "audit",
+    "civilization_os_mapping"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.3.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "trace_memory_integration"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^tmi-[a-z0-9][a-z0-9-]*$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "base_layer_links": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "compatible_schema_version",
+          "referenced_record_type",
+          "relationship"
+        ],
+        "properties": {
+          "compatible_schema_version": {
+            "type": "string",
+            "enum": [
+              "0.1.0",
+              "0.2.0"
+            ]
+          },
+          "referenced_record_type": {
+            "type": "string",
+            "enum": [
+              "consciousness_structure_record",
+              "yin_yang_interaction_layer"
+            ]
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "extends_consciousness_structure_record",
+              "extends_yin_yang_interaction_layer"
+            ]
+          }
+        }
+      }
+    },
+    "integration_principle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "trace_role",
+        "memory_role",
+        "integration_rule"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trace_role": {
+          "type": "string",
+          "const": "preserve_circulation_evidence"
+        },
+        "memory_role": {
+          "type": "string",
+          "const": "compress_and_return_reviewable_context"
+        },
+        "integration_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "trace_layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trace_units",
+        "retention_rules",
+        "transformation_rules",
+        "boundary_rules"
+      ],
+      "properties": {
+        "trace_units": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "question_trace",
+              "origin_trace",
+              "reflection_trace",
+              "review_trace",
+              "re_ignition_trace",
+              "value_trace"
+            ]
+          }
+        },
+        "retention_rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "preserve_human_origin",
+              "preserve_ai_reflection_path",
+              "preserve_human_review_decision",
+              "preserve_re_ignition_seed",
+              "preserve_value_boundary"
+            ]
+          }
+        },
+        "transformation_rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "compress_without_origin_loss",
+              "map_relations_without_claim_inflation",
+              "summarize_with_trace_reference",
+              "return_ambiguity_as_review_item",
+              "separate_observation_from_interpretation"
+            ]
+          }
+        },
+        "boundary_rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "no_trace_erasure",
+              "no_origin_substitution",
+              "no_unreviewed_memory_rewrite",
+              "no_ai_authority_inflation",
+              "no_value_boundary_collapse"
+            ]
+          }
+        }
+      }
+    },
+    "memory_layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "memory_modes",
+        "compression_rules",
+        "recall_rules",
+        "forgetting_rules"
+      ],
+      "properties": {
+        "memory_modes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "working_memory",
+              "reflective_memory",
+              "compressed_memory",
+              "re_ignition_memory"
+            ]
+          }
+        },
+        "compression_rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "preserve_core_question",
+              "preserve_origin_boundary",
+              "preserve_review_status",
+              "compress_repeated_patterns",
+              "mark_uncertainty_explicitly"
+            ]
+          }
+        },
+        "recall_rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "recall_with_origin_context",
+              "recall_with_trace_reference",
+              "recall_as_reviewable_support",
+              "recall_without_final_authority_claim"
+            ]
+          }
+        },
+        "forgetting_rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "forget_noise_without_origin_loss",
+              "forget_redundant_surface_form",
+              "preserve_structural_seed",
+              "preserve_human_boundary",
+              "require_review_for_identity_level_memory"
+            ]
+          }
+        }
+      }
+    },
+    "consciousness_loop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "loop_name",
+        "phases"
+      ],
+      "properties": {
+        "loop_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "phases": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "phase",
+              "actor",
+              "input",
+              "output",
+              "audit_requirement"
+            ],
+            "properties": {
+              "phase": {
+                "type": "string",
+                "enum": [
+                  "trace_capture",
+                  "memory_compression",
+                  "reflective_recall",
+                  "re_ignition"
+                ]
+              },
+              "actor": {
+                "type": "string",
+                "enum": [
+                  "human",
+                  "ai",
+                  "human_ai_loop"
+                ]
+              },
+              "input": {
+                "type": "string",
+                "minLength": 1
+              },
+              "output": {
+                "type": "string",
+                "minLength": 1
+              },
+              "audit_requirement": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "integration_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "receipt_required",
+        "required_fields"
+      ],
+      "properties": {
+        "receipt_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "required_fields": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "source_question",
+              "origin_context",
+              "trace_units",
+              "memory_compression_summary",
+              "human_review_status",
+              "re_ignition_seed"
+            ]
+          }
+        }
+      }
+    },
+    "failure_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "trace_lost_before_memory",
+          "memory_compressed_without_origin",
+          "ai_recall_claims_final_authority",
+          "human_review_status_missing",
+          "re_ignition_seed_missing",
+          "identity_level_memory_unreviewed"
+        ]
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trace_required",
+        "memory_review_required",
+        "origin_required",
+        "human_review_required",
+        "audit_note"
+      ],
+      "properties": {
+        "trace_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "memory_review_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "origin_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "human_review_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "audit_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "civilization_os_mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ignition",
+        "origin",
+        "derivative",
+        "audit",
+        "royalty",
+        "re_ignition"
+      ],
+      "properties": {
+        "ignition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "derivative": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "royalty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "re_ignition": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
