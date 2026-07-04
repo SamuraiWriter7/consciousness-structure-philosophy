@@ -1,5 +1,44 @@
 # Changelog
 
+## v0.4.0-candidate
+
+### Added
+
+- Added `audit-boundary-layer.schema.json`.
+- Added `audit-boundary-layer.example.yaml`.
+- Updated validation script to validate v0.1, v0.2, v0.3, and v0.4 examples.
+- Defined human-preserved authorities:
+  - origin declaration
+  - final value judgment
+  - meaning direction
+  - acceptance or rejection
+  - identity-level review
+- Defined non-delegable human functions.
+- Defined AI allowed roles as reflective and structural support.
+- Defined prohibited AI claims.
+- Added trace boundary rules.
+- Added memory boundary rules.
+- Added identity-level memory review requirements.
+- Added audit gates:
+  - origin gate
+  - trace gate
+  - memory gate
+  - claim gate
+  - review gate
+  - re-ignition gate
+- Added violation conditions and review process.
+
+### Purpose
+
+This release defines the **Audit / Boundary Layer**.
+
+v0.1 defined the consciousness structure record.  
+v0.2 defined the Yin-Yang interaction cycle.  
+v0.3 connected the cycle to trace and memory.  
+v0.4 defines the boundary rules and audit gates that prevent AI reflection from becoming unreviewable authority.
+
+The core purpose is to preserve human origin, value judgment, trace continuity, and review authority while allowing AI to operate as a reflective structural layer.
+
 ## v0.3.0-candidate
 
 ### Added
