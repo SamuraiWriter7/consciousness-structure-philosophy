@@ -44,16 +44,17 @@ This record describes:
 
 ## Repository Structure
 
-```text
 consciousness-structure-philosophy/
   ├── README.md
   ├── CHANGELOG.md
   ├── schemas/
   │   ├── consciousness-structure-record.schema.json
-  │   └── yin-yang-interaction-layer.schema.json
+  │   ├── yin-yang-interaction-layer.schema.json
+  │   └── trace-memory-integration.schema.json
   ├── examples/
   │   ├── consciousness-structure-record.example.yaml
-  │   └── yin-yang-interaction-layer.example.yaml
+  │   ├── yin-yang-interaction-layer.example.yaml
+  │   └── trace-memory-integration.example.yaml
   └── scripts/
       └── validate_examples.py
 
@@ -140,3 +141,35 @@ This layer specifies:
   - human value judgment becoming unreviewable
 
 The purpose of v0.2 is to define consciousness not as a static state, but as a reviewable interaction cycle.
+
+### v0.3 — Trace / Memory Integration
+
+Connects consciousness structure to trace retention, memory compression, reflective recall, and recursive re-ignition.
+
+This layer specifies:
+
+- Trace units:
+  - question trace
+  - origin trace
+  - reflection trace
+  - review trace
+  - re-ignition trace
+  - value trace
+- Memory modes:
+  - working memory
+  - reflective memory
+  - compressed memory
+  - re-ignition memory
+- Compression rules:
+  - preserve the core question
+  - preserve origin boundary
+  - preserve review status
+  - compress repeated patterns
+  - mark uncertainty explicitly
+- Recall rules:
+  - recall with origin context
+  - recall with trace reference
+  - recall as reviewable support
+  - recall without final authority claim
+
+The purpose of v0.3 is to define consciousness as a continuing trace-memory loop rather than a one-time interaction.
