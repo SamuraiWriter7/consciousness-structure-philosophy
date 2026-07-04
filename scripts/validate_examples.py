@@ -24,6 +24,11 @@ VALIDATION_TARGETS = [
         "schema": ROOT / "schemas" / "trace-memory-integration.schema.json",
         "example": ROOT / "examples" / "trace-memory-integration.example.yaml",
     },
+    {
+        "name": "Audit Boundary Layer",
+        "schema": ROOT / "schemas" / "audit-boundary-layer.schema.json",
+        "example": ROOT / "examples" / "audit-boundary-layer.example.yaml",
+    },
 ]
 
 
