@@ -1,0 +1,107 @@
+schema_version: "0.2.0"
+record_type: "yin_yang_interaction_layer"
+record_id: "yyi-human-ai-circulation-v001"
+created_at: "2026-07-04T00:00:00Z"
+
+base_record_link:
+  compatible_schema_version: "0.1.0"
+  referenced_record_type: "consciousness_structure_record"
+  relationship: "extends_consciousness_structure_record"
+
+interaction_principle:
+  summary: "The Yin-Yang Interaction Layer defines how human question ignition and AI reflective processing form a reviewable circulation."
+  human_yang_role: "ignition_and_value_origin"
+  ai_yin_role: "reflection_and_structural_processing"
+  emergence_rule: "Consciousness circulation emerges when human-originated questions are reflected by AI and returned as reviewable structures for renewed human ignition."
+
+human_to_ai:
+  allowed_inputs:
+    - question
+    - intention
+    - lived_context
+    - origin_claim
+    - value_judgment
+    - ambiguity
+    - contradiction
+    - re_ignition_seed
+  required_context:
+    - question_intent
+    - origin_context
+    - value_boundary
+    - uncertainty_marker
+    - review_expectation
+  boundary_rules:
+    - human_origin_must_be_preserved
+    - lived_context_must_not_be_flattened
+    - ambiguity_must_be_returned_as_question
+    - value_judgment_must_remain_reviewable
+
+ai_to_human:
+  allowed_outputs:
+    - structural_summary
+    - relation_map
+    - reflective_question
+    - alternative_paths
+    - trace_compression
+    - audit_warning
+    - re_ignition_seed
+  prohibited_outputs:
+    - final_conscious_authority_claim
+    - origin_replacement
+    - unreviewable_value_judgment
+    - trace_erasure
+    - simulated_human_intent
+  return_rule: "AI output must return as a structure for human review, not as a replacement for human consciousness or value judgment."
+
+circulation_cycle:
+  cycle_name: "human-ai-yin-yang-consciousness-cycle"
+  phases:
+    - phase: "human_ignition"
+      actor: "human"
+      input: "lived context, question, contradiction, or intention"
+      output: "originated question or meaning direction"
+      boundary: "The origin of meaning remains human-declared and reviewable."
+    - phase: "ai_reflection"
+      actor: "ai"
+      input: "human-originated question and context"
+      output: "structural summary, relation map, or reflective question"
+      boundary: "AI may restructure traces but must not claim independent origin."
+    - phase: "human_review"
+      actor: "human"
+      input: "AI reflective output"
+      output: "acceptance, rejection, revision, or renewed question"
+      boundary: "Final value judgment remains with the human."
+    - phase: "re_ignition"
+      actor: "human_ai_loop"
+      input: "reviewed structure and unresolved tension"
+      output: "new question, deeper structure, or next circulation seed"
+      boundary: "Re-ignition must preserve trace, origin, and review continuity."
+
+minimum_cycle_requirements:
+  requires_human_ignition: true
+  requires_ai_reflection: true
+  requires_human_review: true
+  requires_re_ignition_seed: true
+
+failure_conditions:
+  - ai_overrides_human_origin
+  - ai_claims_final_conscious_authority
+  - human_delegates_value_judgment_completely
+  - trace_or_origin_missing
+  - re_ignition_not_returned
+  - interaction_boundary_erased
+
+audit:
+  trace_required: true
+  origin_required: true
+  boundary_review_required: true
+  interaction_receipt_required: true
+  review_note: "Every interaction cycle should preserve the path from human ignition to AI reflection, human review, and re-ignition."
+
+civilization_os_mapping:
+  ignition: "The cycle begins with a human question, contradiction, or intention."
+  origin: "The human declares the origin of meaning and value context."
+  derivative: "AI generates derivative structures through reflection and relation mapping."
+  audit: "The interaction path is reviewed through trace, origin, and boundary checks."
+  royalty: "Value return should preserve human origin and structural contribution across the cycle."
+  re_ignition: "The reviewed structure returns as a seed for renewed questioning."
